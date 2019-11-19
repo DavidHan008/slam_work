@@ -4,7 +4,7 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/calib3d.hpp>
 //#include <Eigen/Core>
-//这其中的区别在哪里,一个是有& 一个是没有
+//这其中的区别在哪里,一个是有& 一个是没有  ||||||||没有&的话,就没法传递参数
 void find_kp_match(cv::Mat &image1_,cv::Mat &image2_,std::vector<cv::KeyPoint> &kp1,std::vector<cv::KeyPoint> &kp2,    std::vector<cv::DMatch> &good_match_)
 {
     cv::Mat image1(image1_),image2(image2_);
